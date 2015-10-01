@@ -1,11 +1,13 @@
+{% load static from staticfiles %}
 <!DOCTYPE html>
 <html>
 <head>
 <title>RS-1200 Prototype 13</title>
 <meta charset="iso-8859-1">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="layout/styles/main.css" rel="stylesheet" type="text/css" media="all">
-<link href="layout/styles/mediaqueries.css" rel="stylesheet" type="text/css" media="all">
+
+<link href="{% static 'layout/styles/main.css' %}" rel="stylesheet" type="text/css" media="all">
+<link href="{% static 'layout/styles/mediaqueries.css' %}" rel="stylesheet" type="text/css" media="all">
 <!--[if lt IE 9]>
 <link href="layout/styles/ie/ie8.css" rel="stylesheet" type="text/css" media="all">
 <script src="layout/scripts/ie/css3-mediaqueries.min.js"></script>
@@ -16,18 +18,20 @@
 <div class="wrapper row1">
   <header id="header" class="full_width clear">
     <div id="hgroup">
-      <h1><a href="index.html">RS-1200 Prototype 13</a></h1>
+      <h1><a href="index">RS-1200 Prototype 13</a></h1>
       <h2>Free Responsive Template</h2>
     </div>
     <div id="header-contact">
       <ul class="list none">
         <li><span class="icon-envelope"></span> <a href="#">info@domain.com</a></li>
-        <li><span class="icon-phone"></span> +xx xxx xxxxxxxxxx</li>
+        <li><span class="icon-phone"></span> +91-9717560973</li>
       </ul>
     </div>
   </header>
 </div>
+
 <!-- ################################################################################################ -->
+
 <div class="wrapper row2">
   <nav id="topnav">
     <ul class="clear">
@@ -132,6 +136,7 @@
           </li>
         </ul>
       </section>
+
       <!-- ################################################################################################ -->
       <div class="divider2"></div>
       <!-- ################################################################################################ -->
@@ -139,7 +144,7 @@
         <ul class="nospace center clear">
           <li class="one_third first">
             <article>
-              <div class="boxholder push30"><img src="images/demo/gallery.gif" alt=""></div>
+              <div class="boxholder push30"><img src= "{% static 'images/demo/gallery.gif' %}" alt=""></div>
               <h1><span class="icon-fullscreen"></span> Headline Text</h1>
               <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur.</p>
               <footer><a href="#" class="button small orange rnd5">Read More &raquo;</a></footer>
@@ -147,15 +152,16 @@
           </li>
           <li class="one_third">
             <article>
-              <div class="boxholder push30"><img src="images/demo/gallery.gif" alt=""></div>
+              <div class="boxholder push30"><img src= "{% static 'images/demo/gallery.gif' %}"  alt=""></div>
               <h1><span class="icon-pushpin"></span> Headline Text</h1>
               <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur.</p>
               <footer><a href="#" class="button small orange rnd5">Read More &raquo;</a></footer>
             </article>
           </li>
+
           <li class="one_third">
             <article>
-              <div class="boxholder push30"><img src="images/demo/gallery.gif" alt=""></div>
+              <div class="boxholder push30"><img src="{% static 'images/demo/gallery.gif' %}" alt=""></div>
               <h1><span class="icon-thumbs-up"></span> Headline Text</h1>
               <p>Aliquatjusto quisque nam consequat doloreet vest orna partur scetur portortis nam. Metadipiscing eget facilis elit sagittis felisi eger id justo maurisus convallicitur.</p>
               <footer><a href="#" class="button small orange rnd5">Read More &raquo;</a></footer>
@@ -169,10 +175,10 @@
       <section class="last clear">
         <h1><span class="icon-paper-clip"></span> Headline Text</h1>
         <ul class="nospace clear">
-          <li class="one_quarter first"><a href="#"><img src="images/demo/gallery.gif" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="images/demo/gallery.gif" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="images/demo/gallery.gif" alt=""></a></li>
-          <li class="one_quarter"><a href="#"><img src="images/demo/gallery.gif" alt=""></a></li>
+          <li class="one_quarter first"><a href="#"><img src="{% static 'images/demo/gallery.gif' %}" alt=""></a></li>
+          <li class="one_quarter"><a href="#"><img src="{% static 'images/demo/gallery.gif' %}" alt=""></a></li>
+          <li class="one_quarter"><a href="#"><img src="{% static 'images/demo/gallery.gif' %}" alt=""></a></li>
+          <li class="one_quarter"><a href="#"><img src="{% static 'images/demo/gallery.gif' %}" alt=""></a></li>
         </ul>
       </section>
     </div>
@@ -198,31 +204,31 @@
         </ul>
       </nav>
     </div>
+
     <div class="one_quarter">
       <h2 class="footer_title">Latest Gallery</h2>
       <ul id="ft_gallery" class="nospace spacing clear">
-        <li class="one_third first"><a href="#"><img src="images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third first"><a href="#"><img src="images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third first"><a href="#"><img src="images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="images/demo/80x80.gif" alt=""></a></li>
-        <li class="one_third"><a href="#"><img src="images/demo/80x80.gif" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img src= "{% static 'images/demo/80x80.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/80x80.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/80x80.gif' %}" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img src="{% static 'images/demo/80x80.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/80x80.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/80x80.gif' %}" alt=""></a></li>
+        <li class="one_third first"><a href="#"><img src="{% static 'images/demo/80x80.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/80x80.gif' %}" alt=""></a></li>
+        <li class="one_third"><a href="#"><img src="{% static 'images/demo/80x80.gif' %}" alt=""></a></li>
       </ul>
     </div>
+
     <div class="one_quarter">
       <h2 class="footer_title">From Twitter</h2>
       <div class="tweet-container">
         <ul class="list none">
           <li><strong>@<a href="#">name</a></strong> <span class="tweet_text">RT <span class="at">@</span><a href="#">name</a> Donec suscipit vehicula turpis sed lutpat Quisque vitae quam neque.</span> <span class="tweet_time"><a href="#">about 9 hours ago</a></span></li>
-          <li><strong>@<a href="#">name</a></strong> <span class="tweet_text">RT <span class="at">@</span><a href="#">name</a> Donec suscipit vehicula turpis sed lutpat Quisque vitae quam neque.</span> <span class="tweet_time"><a href="#">about 9 hours ago</a></span></li>
-          <li><strong>@<a href="#">name</a></strong> <span class="tweet_text">RT <span class="at">@</span><a href="#">name</a> Donec suscipit vehicula turpis sed lutpat Quisque vitae quam neque.</span> <span class="tweet_time"><a href="#">about 9 hours ago</a></span></li>
-          <li><strong>@<a href="#">name</a></strong> <span class="tweet_text">RT <span class="at">@</span><a href="#">name</a> Donec suscipit vehicula turpis sed lutpat Quisque vitae quam neque.</span> <span class="tweet_time"><a href="#">about 9 hours ago</a></span></li>
         </ul>
       </div>
     </div>
+
     <div class="one_quarter">
       <h2 class="footer_title">Contact Us</h2>
       <form class="rnd5" action="#" method="post">
@@ -244,21 +250,25 @@
         </p>
       </form>
     </div>
+
   </div>
 </div>
+
 <div class="wrapper row4">
   <div id="copyright" class="clear">
     <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved - <a href="#">Domain Name</a></p>
     <p class="fl_right">Template by <a href="http://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
   </div>
 </div>
+
 <!-- Scripts -->
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="http://code.jquery.com/ui/1.10.1/jquery-ui.min.js"></script>
 <script>window.jQuery || document.write('<script src="layout/scripts/jquery-latest.min.js"><\/script>\
 <script src="layout/scripts/jquery-ui.min.js"><\/script>')</script>
 <script>jQuery(document).ready(function($){ $('img').removeAttr('width height'); });</script>
-<script src="layout/scripts/jquery-mobilemenu.min.js"></script>
-<script src="layout/scripts/custom.js"></script>
+
+<script src= "{% static 'layout/scripts/jquery-mobilemenu.min.js' %}" ></script>
+<script src=" {% static 'layout/scripts/custom.js' %} "></script>
 </body>
 </html>
