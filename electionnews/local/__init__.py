@@ -1,0 +1,1 @@
+/home/niranjan/newproject/newselection/electionnews/__init__.py

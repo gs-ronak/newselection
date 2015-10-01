@@ -1,0 +1,1 @@
+/home/niranjan/newproject/newselection/electionnews/wsgi.py
